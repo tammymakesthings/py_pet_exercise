@@ -1,16 +1,16 @@
 {
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
+        "**/__pycache__": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true,
+        "**/.git": true,
+        "**/.hg": true,
         "**/.mypy_cache": true,
         "**/.pytest_cache": true,
-        "**/__pycache__": true,
+        "**/.svn": true,
         "**/.venv": true,
+        "**/CVS": true,
         "**/poetry.lock": true,
+        "**/Thumbs.db": true,
     },
 
     "python.poetryPath": "poetry",
@@ -29,8 +29,17 @@
 
     "python.testing.autoTestDiscoverOnSaveEnabled": true,
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestPath": "pytest",
     "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": "pytest",
+    "python.testing.pytestArgs": [
+        "--color=auto",
+        "--cov-fail-under=95",
+        "--cov",
+        "--durations=0",
+        "--failed-first",
+        "--no-cov-on-fail",
+        "--tb=auto",
+    ],
     "pythonTestExplorer.testFramework": "pytest",
 
     "autoDocstring.docstringFormat": "one-line-sphinx",
