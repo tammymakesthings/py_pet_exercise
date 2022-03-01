@@ -31,15 +31,6 @@
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.testing.pytestPath": "pytest",
-    "python.testing.pytestArgs": [
-        "--color=auto",
-        "--cov-fail-under=95",
-        "--cov",
-        "--durations=0",
-        "--failed-first",
-        "--no-cov-on-fail",
-        "--tb=auto",
-    ],
     "pythonTestExplorer.testFramework": "pytest",
 
     "autoDocstring.docstringFormat": "one-line-sphinx",
