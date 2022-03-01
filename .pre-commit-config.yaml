@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2020 Diego Elio Pettenò
+# SPDX-FileCopyrightText: 2022 Tammy Cravit <tammymakesthings.com>
 #
 # SPDX-License-Identifier: Unlicense
 
@@ -9,6 +9,10 @@ repos:
   - id: check-yaml
   - id: end-of-file-fixer
   - id: trailing-whitespace
+- repo: https://github.com/fsfe/reuse-tool
+  rev: v0.12.1
+  hooks:
+  - id: reuse
 - repo: https://github.com/ambv/black
   rev: 22.1.0
   hooks:
