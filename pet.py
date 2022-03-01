@@ -1,12 +1,16 @@
 # pylint: disable=missing-module-docstring
 
+
 class Pet:
     """Represents a pet."""
 
-    def __init__(self, name: str = "Fluffy",
-                 kind: str = "Alpaca",
-                 owner: str = "Tammy",
-                 age: int = 1) -> None:
+    def __init__(
+        self,
+        name: str = "Fluffy",
+        kind: str = "Alpaca",
+        owner: str = "Tammy",
+        age: int = 1,
+    ) -> None:
         """
         Create a new pet.
 
@@ -77,7 +81,7 @@ class Pet:
         not supported)
         :raises AttributeError: Always raised because species is read-only.
         """
-        raise AttributeError('You can\'t change the kind of an animal!')
+        raise AttributeError("You can't change the kind of an animal!")
 
     @owner.setter
     def owner(self, new_owner: str) -> None:
