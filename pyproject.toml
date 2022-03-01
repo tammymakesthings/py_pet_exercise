@@ -4,10 +4,31 @@
 
 [tool.poetry]
 name = "pet"
-version = "0.1.0"
+version = "0.0.0-auto.0"
 description = "Representation of a Pet in Python"
-authors = ["Tammy Cravit <tammy.cravit@azblue.com>"]
+authors = ["Tammy Cravit <tammy@tammymakesthings.com>"]
+maintainers = ["Tammy Cravit <tammy@tammymakesthings.com>"]
 license = "Unlicense"
+readme = "README.rst"
+homepage = "https://github.com/tammymakesthings/py_pet_exercise"
+repository = "https://github.com/tammymakesthings/py_pet_exercise"
+keywords = [ "programming exercises", "object model"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Other Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed"
+]
+packages = [
+    { include = "py_pet_exercise" }
+]
+include = [
+    "README.rst"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -18,6 +39,9 @@ pylint = "^2.12.2"
 black = "^22.1.0"
 pytest-cov = "^3.0.0"
 pre-commit = "^2.17.0"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tammymakesthings/py_pet_exercise/issues"
 
 [tool.black]
 target-version=['py38']
