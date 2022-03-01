@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2020 Diego Elio Pettenò
+#
+# SPDX-License-Identifier: Unlicense
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.1.0
+  hooks:
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+- repo: https://github.com/ambv/black
+  rev: 22.1.0
+  hooks:
+  - id: black
+    language_version: python3.10
