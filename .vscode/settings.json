@@ -41,5 +41,9 @@
     "autoDocstring.generateDocstringOnEnter": true,
     "autoDocstring.guessTypes": true,
     "autoDocstring.quoteStyle": "\"\"\"",
-    "autoDocstring.startOnNewLine": true
+    "autoDocstring.startOnNewLine": true,
+    "restructuredtext.confPath": "",
+    "restructuredtext.languageServer.disabled": true,
+    "restructuredtext.preview.docutils.disabled": true,
+    "restructuredtext.linter.disabled": true
 }
