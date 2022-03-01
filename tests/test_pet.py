@@ -5,7 +5,7 @@ Unit tests for the Pet class.
 """
 
 import pytest  # pylint: disable=unused-import
-from pet import Pet
+from py_pet_exercise.pet import Pet
 
 
 def test_can_instantiate_object():
