@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Unlicense
 
 [project]
-name = "pet"
+name = "python_pet_exercise"
 version = "0.0.0-auto.0"
 description = "Representation of a Pet in Python"
 authors = [
@@ -12,7 +12,7 @@ authors = [
 maintainers = [
     { name = "Tammy Cravit", email = "tammy@tammymakesthings.com" }
 ]
-readme = "README.rst"
+readme = "README.md"
 keywords = [ "programming exercises", "object model"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -32,7 +32,8 @@ dependencies = [
     "pylint >= 2.12.2",
     "black >= 22.1.0",
     "pytest-cov >= 3.0.0",
-    "pre-commit >= 2.17.0"
+    "pre-commit >= 2.17.0",
+    "pydantic>=1.9.0",
 ]
 
 [tool.black]
@@ -59,7 +60,7 @@ exclude = '''
 
 [tool.pytest.ini_options]
 minversion = 6.0
-addopts = "-ra -q"
+addopts = "-ra -q --cov=python_pet_exercise"
 testpaths = [
     'tests',
 ]
