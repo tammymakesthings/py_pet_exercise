@@ -24,12 +24,6 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Typing :: Typed"
 ]
-packages = [
-    { include = "py_pet_exercise" }
-]
-include = [
-    "README.rst"
-]
 license = { text = "Unlicense" }
 requires-python = ">= 3.8"
 
