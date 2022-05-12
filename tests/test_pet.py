@@ -18,7 +18,7 @@ def test_can_instantiate_object():
     """
     the_pet = Pet()
 
-    assert not the_pet is None
+    assert the_pet is not None
     assert isinstance(the_pet, Pet)
 
 
